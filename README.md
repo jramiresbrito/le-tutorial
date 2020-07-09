@@ -1,24 +1,5 @@
-# README
+# Learn Enough Ruby on Rails Tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## This application aims to implement TDD technique while build a fullstack application using Ruby on Rails using Michael Hartl [Ruby on Rails Tutorial](https://www.learnenough.com/ruby-on-rails-6th-edition).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## I'm also taking an opportunity to test the brand new [Bootstrap V5 Alpha](https://v5.getbootstrap.com/)
