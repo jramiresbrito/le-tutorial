@@ -11,7 +11,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      # handle success
+      flash[:success] = 'Welcome to the Jungle!'
+      redirect_to @user
     else
       render :new
     end
