@@ -1,6 +1,7 @@
 puts 'Creating users...'
 
 User.create!(
+  admin: true,
   name: 'João Victor Ramires Guimarães Brito',
   email: 'joaoramires.engsoft@gmail.com',
   password: 'password',
