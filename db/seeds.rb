@@ -5,7 +5,9 @@ User.create!(
   name: 'João Victor Ramires Guimarães Brito',
   email: 'joaoramires.engsoft@gmail.com',
   password: 'password',
-  password_confirmation: 'password'
+  password_confirmation: 'password',
+  activated: true,
+  activated_at: Time.zone.now
 )
 puts '1 - João created successfully.'
 
@@ -16,7 +18,9 @@ puts '1 - João created successfully.'
   User.create!(name: name,
                email: email,
                password: password,
-               password_confirmation: password)
+               password_confirmation: password,
+               activated: true,
+               activated_at: Time.zone.now)
 
   puts "#{n + 2} - #{name} created successfully."
 end
