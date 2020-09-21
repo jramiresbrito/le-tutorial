@@ -48,7 +48,7 @@ class User < ApplicationRecord
     update_attribute(:remember_digest, nil)
   end
 
-  # Returns a session token to prevent sessino hijacking.
+  # Returns a session token to prevent session hijacking.
   # Reuse the remember digest for convenience.
   def session_token
     remember_digest || remember
@@ -57,7 +57,7 @@ class User < ApplicationRecord
   private
 
   def downcase_email
-    self.email = email.downcase
+    email.downcase!
   end
 
   def create_activation_digest
