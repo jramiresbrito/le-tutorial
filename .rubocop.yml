@@ -30,6 +30,8 @@ Style/MutableConstant:
   Enabled: false
 Style/SignalException:
   Enabled: false
+Metrics/MethodLength:
+  Max: 20
 Metrics/CyclomaticComplexity:
   Enabled: false
 Style/MethodMissingSuper:
