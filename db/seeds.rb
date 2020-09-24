@@ -25,4 +25,14 @@ puts '1 - João created successfully.'
   puts "#{n + 2} - #{name} created successfully."
 end
 
+puts `clear`
+
+puts 'Creating Microposts...'
+
+users = User.order(:created_at).take(6)
+50.times do
+  content = Faker::Lorem.sentence(word_count: 5)
+  users.each { |user| user.microposts.create!(content: content) }
+end
+
 puts 'done!'

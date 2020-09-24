@@ -1,0 +1,14 @@
+cassilds:
+  content: "Mussum says: 'Cadilds!'"
+  created_at: <%= 10.minutes.ago %>
+  user: joao
+
+rapidex:
+  content: "Check out the Rapidex software development company at: https://rapidex.dev"
+  created_at: <%= 6.months.ago %>
+  user: joao
+
+most_recent:
+  content: "Writting a test"
+  created_at: <%= Time.zone.now %>
+  user: joao
