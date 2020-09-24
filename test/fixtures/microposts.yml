@@ -12,3 +12,15 @@ most_recent:
   content: "Writting a test"
   created_at: <%= Time.zone.now %>
   user: joao
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago %>
+  user: joao
+<% end %>
+
+conversation:
+  content: "Hey João, are you there?"
+  created_at: <%= 1.month.ago %>
+  user: flavia

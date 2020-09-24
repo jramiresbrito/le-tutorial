@@ -7,3 +7,10 @@ require('channels');
 // External libraries
 require('jquery');
 import 'bootstrap';
+
+// Internal Scripts
+import checkImageSize from '../custom/checkImageSize';
+
+document.addEventListener("turbolinks:load", () => {
+  checkImageSize();
+});

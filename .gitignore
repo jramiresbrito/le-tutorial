@@ -41,3 +41,5 @@ yarn-debug.log*
 .yarn-integrity
 db/test.*
 /spring/*.pid
+
+*.csv

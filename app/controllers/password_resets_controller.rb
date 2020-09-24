@@ -46,10 +46,14 @@ class PasswordResetsController < ApplicationController
   def set_user
     @user = User.find_by(email: params[:email])
   end
-
+  # rubocop:disable all
   def valid_user
-    redirect_to root_url unless @user&.activated? && @user&.authenticated?(:reset, params[:id])
+    unless (@user && @user.activated? &&
+            @user.authenticated?(:reset, params[:id]))
+      redirect_to root_url
+    end
   end
+  # rubocop:enable all
 
   # check if reset token is expired
   def check_expiration
