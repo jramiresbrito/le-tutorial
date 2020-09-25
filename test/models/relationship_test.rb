@@ -37,7 +37,7 @@ class RelationshipTest < ActiveSupport::TestCase
     joao = users(:joao)
 
     assert_not joao.following?(joao)
-    assert_raise(User::InvalidStateException) { joao.follow(joao) }
+    assert_raise(User.const_get(:InvalidStateException)) { joao.follow(joao) }
     assert_not joao.following?(joao)
   end
 end

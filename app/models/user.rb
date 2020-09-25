@@ -5,7 +5,7 @@ class User < ApplicationRecord
     end
   end
 
-  # private_constant :InvalidStateException
+  private_constant :InvalidStateException
 
   has_many :microposts, dependent: :destroy
   has_many :active_relationships, class_name: "Relationship",
