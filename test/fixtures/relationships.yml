@@ -1,0 +1,15 @@
+one:
+  follower: joao
+  followed: amanda
+
+two:
+  follower: joao
+  followed: flavia
+
+three:
+  follower: amanda
+  followed: joao
+
+four:
+  follower: flavia
+  followed: joao
